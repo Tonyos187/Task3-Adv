@@ -1,0 +1,15 @@
+.gallery {
+    width: 100%;
+    padding: 0 8.4375%;
+    margin: 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 135px;
+}
+
+.galleryItemsContainer,
+.btnsContainer {
+    width: 100%;
+}

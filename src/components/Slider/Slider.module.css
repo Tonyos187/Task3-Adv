@@ -1,0 +1,164 @@
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.slideContainer {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slidesTrack {
+    display: flex;
+    transition: transform 0.25s ease-in-out;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.slidePadding {
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+.btn,
+.btn2,
+.awardBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    gap: 10px;
+    border-radius: 8px;
+    border-width: 2px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.mobileBtns {
+    display: none;
+}
+
+.awardsSlider,
+.gallerySlider {
+    display: flex;
+    flex-direction: column;
+}
+
+.awardsSlide {
+    align-items: stretch;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-top: 37px;
+}
+
+.awardsBtnsSection,
+.galleryBtnsSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.awardsBtns {
+    display: flex;
+    gap: 20px;
+}
+
+.moreAwards {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+
+.galleryTitle {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+
+.gallerycontainer {
+    overflow: hidden;
+    width: calc(100% - 100px);
+    position: absolute;
+    top: 0;
+    left: 50px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 1440px) {
+    .slider {
+        gap: 40px;
+    }
+    .btn,
+    .btn2,
+    .awardBtn {
+        width: 48px;
+        height: 48px;
+    }
+    .btn2 {
+        display: none;
+    }
+    .mobileBtns {
+        display: none;
+    }
+    .awardsBtns {
+        gap: 16px;
+    }
+    .awardsSlide {
+        padding-top: 28px;
+    }
+    .moreAwards {
+        font-size: 18px;
+    }
+    .galleryTitle {
+        font-size: 34px;
+    }
+    .gallerycontainer {
+        width: calc(100% - 80px);
+        top: 0;
+        left: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .btn {
+        display: none;
+    }
+    .btn2 {
+        display: flex;
+    }
+    .mobileBtns {
+        display: flex;
+        gap: 20px;
+    }
+    .galleryBtnsSection {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .galleryTitle {
+        font-size: 28px;
+    }
+    .gallerycontainer {
+        width: calc(100% - 60px);
+        top: 0;
+        left: 30px;
+    }
+}
