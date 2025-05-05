@@ -66,6 +66,7 @@ const Slider = ({ array = [], CardComponent = null, type = "", galleryTitle = ""
             ? array.slice(1, -1).flat()
             : array.flat();
 
+
     const fullSlides = [
         activeArray[activeArray.length - 1],
         ...activeArray,
@@ -98,16 +99,19 @@ const Slider = ({ array = [], CardComponent = null, type = "", galleryTitle = ""
                             className={`${styles.slide} 
                             ${type === "Testimonials" ?
                                     styles.slidePadding :
-                                    type === "Awards" ? styles.awardsSlide : styles.gallerySlide}`}
+                                    type === "Awards" ? styles.awardsSlide : ""}`}
                             key={index}
                         >
-                            {Array.isArray(group) ? (
-                                group.map((item, subIndex) => (
-                                    <CardComponent key={subIndex} {...item} />
-                                ))
-                            ) : (
-                                <CardComponent key={index} {...group} />
-                            )}
+                            {Array.isArray(group) ?
+                                (
+                                    group.map((item, subIndex) => (
+                                        <CardComponent key={subIndex} {...item} />
+                                    ))
+                                )
+                                :
+                                (
+                                    <CardComponent key={index} {...group} />
+                                )}
                         </div>
                     ))}
                 </div>

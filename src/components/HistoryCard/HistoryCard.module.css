@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     gap: 50px;
+    position: relative;
 }
 
 .cardHistory {
@@ -23,8 +24,6 @@
     font-family: Raleway;
     font-weight: 700;
     font-size: 68px;
-    line-height: 130%;
-    letter-spacing: 0%;
 }
 
 .historyCard {
@@ -56,6 +55,64 @@
     color: var(--text-color5);
 }
 
+.borderDiv {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 8px;
+    width: 84px;
+    transform: translate(-100%);
+    -webkit-transform: translate(-100%);
+    -moz-transform: translate(-100%);
+    -ms-transform: translate(-100%);
+    -o-transform: translate(-100%);
+}
+
+.border,
+.border2 {
+    width: 84px;
+    border: 2px solid black;
+    outline: 6px solid var(--bg5-color);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.border2 {
+    position: absolute;
+    left: -84px;
+    top: 50%;
+    height: calc(100% + 100px);
+    width: 0px;
+    border: 2px solid black;
+    outline: 6px solid var(--bg5-color);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.circle1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.circle2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+}
+
 @media (max-width:1440px) {
     .historyCard {
         gap: 40px;
@@ -79,6 +136,12 @@
     }
     .text {
         font-size: 16px;
+    }
+    .border {
+        width: 73px;
+    }
+    .border2 {
+        height: calc(100% + 80px);
     }
 }
 
@@ -105,5 +168,34 @@
     }
     .title {
         font-size: 22px;
+    }
+    .borderDiv {
+        height: 8px;
+        width: 65px;
+    }
+    .border {
+        width: 65px;
+    }
+    .border2 {
+        left: -65px;
+        top: 50px;
+        height: calc(100% + 50px);
+        width: 0px;
+        border: 2px solid black;
+        outline: 6px solid var(--bg5-color);
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+}
+
+@media (max-width:389px) {
+    .cardHistory {
+        width: 100%;
+        padding-top: 20px;
+        padding-right: 14px;
+        padding-bottom: 20px;
+        padding-left: 14px;
+        box-shadow: 4px 4px 0px 1px #1E1E1E;
     }
 }

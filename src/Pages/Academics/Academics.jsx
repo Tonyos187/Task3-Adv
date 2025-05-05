@@ -3,6 +3,7 @@ import Hero2 from '../../components/Hero2/Hero2';
 import Benefits from '../../components/Benefits/Benefits';
 import Features from "../../components/Features/Features";
 import Gallery from "../../components/Gallery/Gallery";
+import GalleryItem from '../../components/GalleryItem/GalleryItem';
 
 const Academics = () => {
 
@@ -26,34 +27,45 @@ const Academics = () => {
 
     const galleryArray = [
         [
-            { img: "/assets/imgs/Gallery/1.webp" },
-            { img: "/assets/imgs/Gallery/2.webp" },
-            { img: "/assets/imgs/Gallery/3.webp" },
-            { img: "/assets/imgs/Gallery/4.webp" }
+            [
+                { img: "/assets/imgs/Gallery/1.webp" },
+                { img: "/assets/imgs/Gallery/2.webp" },
+                { img: "/assets/imgs/Gallery/3.webp" },
+                { img: "/assets/imgs/Gallery/4.webp" }
+            ],
+
         ],
         [
-            { img: "/assets/imgs/Gallery/21.webp" },
-            { img: "/assets/imgs/Gallery/22.webp" },
-            { img: "/assets/imgs/Gallery/23.webp" },
-            { img: "/assets/imgs/Gallery/24.webp" }
+            [
+                { img: "/assets/imgs/Gallery/21.webp" },
+                { img: "/assets/imgs/Gallery/22.webp" },
+                { img: "/assets/imgs/Gallery/23.webp" },
+                { img: "/assets/imgs/Gallery/24.webp" }
+            ],
         ],
         [
-            { img: "/assets/imgs/Gallery/31.webp" },
-            { img: "/assets/imgs/Gallery/32.webp" },
-            { img: "/assets/imgs/Gallery/33.webp" },
-            { img: "/assets/imgs/Gallery/34.webp" }
+            [
+                { img: "/assets/imgs/Gallery/31.webp" },
+                { img: "/assets/imgs/Gallery/32.webp" },
+                { img: "/assets/imgs/Gallery/33.webp" },
+                { img: "/assets/imgs/Gallery/34.webp" }
+            ],
         ],
         [
-            { img: "/assets/imgs/Gallery/41.webp" },
-            { img: "/assets/imgs/Gallery/42.webp" },
-            { img: "/assets/imgs/Gallery/43.webp" },
-            { img: "/assets/imgs/Gallery/44.webp" }
+            [
+                { img: "/assets/imgs/Gallery/41.webp" },
+                { img: "/assets/imgs/Gallery/42.webp" },
+                { img: "/assets/imgs/Gallery/43.webp" },
+                { img: "/assets/imgs/Gallery/44.webp" }
+            ],
         ],
         [
-            { img: "/assets/imgs/Gallery/51.webp" },
-            { img: "/assets/imgs/Gallery/52.webp" },
-            { img: "/assets/imgs/Gallery/53.webp" },
-            { img: "/assets/imgs/Gallery/54.webp" }
+            [
+                { img: "/assets/imgs/Gallery/51.webp" },
+                { img: "/assets/imgs/Gallery/52.webp" },
+                { img: "/assets/imgs/Gallery/53.webp" },
+                { img: "/assets/imgs/Gallery/54.webp" }
+            ],
         ],
     ];
 

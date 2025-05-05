@@ -1,0 +1,151 @@
+    .card {
+        width: 48.4335%;
+        gap: 30px;
+        border-radius: 12px;
+        border: 2px solid var(--text-color3);
+        padding: 50px;
+        box-shadow: 6px 6px 0px 2px #1E1E1E;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+    }
+    
+    .headingDiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .nameDiv {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    
+    .imgDiv {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        border: 2px solid var(--text-color3);
+        background-color: var(--bg2-color);
+    }
+    
+    .image {
+        height: 100%;
+    }
+    
+    .name {
+        font-family: Raleway;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        color: var(--text-color5);
+    }
+    
+    .iconDiv {
+        width: 56px;
+        height: 56px;
+        gap: 10px;
+        border-radius: 8px;
+        border: 2px solid var(--text-color3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg1-color);
+    }
+    
+    .textContainer {
+        width: 100%;
+        gap: 20px;
+        border-radius: 12px;
+        border: 2px solid var(--text-color3);
+        padding: 30px;
+        background-color: var(--bg1-color);
+    }
+    
+    .qual {
+        font-family: Outfit;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 0%;
+    }
+    
+    .text {
+        font-family: Outfit;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0%;
+    }
+    
+    @media (max-width:1440px) {
+        .card {
+            width: 48.4375%;
+            gap: 24px;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 4px 4px 0px 1px #1E1E1E;
+        }
+        .nameDiv {
+            gap: 12px;
+        }
+        .imgDiv {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+        }
+        .name {
+            font-size: 24px;
+        }
+        .iconDiv {
+            width: 48px;
+            height: 48px;
+            border-radius: 6px;
+        }
+        .textContainer {
+            gap: 16px;
+            border-radius: 10px;
+            padding: 24px;
+        }
+        .qual {
+            font-size: 20px;
+        }
+        .text {
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width:992px) {
+        .card {
+            width: 100%;
+            padding: 30px;
+        }
+        .nameDiv {
+            gap: 10px;
+        }
+        .imgDiv {
+            width: 60px;
+            height: 60px;
+        }
+        .name {
+            font-size: 20px;
+        }
+        .textContainer {
+            gap: 12px;
+            padding: 20px;
+        }
+    }
+    
+    @media (max-width:340px) {
+        .card {
+            width: 100%;
+            padding: 10px;
+        }
+    }

@@ -1,31 +1,61 @@
-import styles from './Gallery.module.css'
-import Title from "../Title/Title"
-import GalleryItem from '../GalleryItem/GalleryItem'
+import { useState } from 'react';
+import styles from './Gallery.module.css';
+import Title from "../Title/Title";
+import GalleryItem from '../GalleryItem/GalleryItem';
 
 const Gallery = ({ btnText, title, text, array, itemTitles, itemTexts }) => {
+    const [visibleSliders, setVisibleSliders] = useState([]);
+
+    const toggleSlider = (title) => {
+        if (visibleSliders.includes(title)) {
+            setVisibleSliders(visibleSliders.filter(slider => slider !== title));
+        } else {
+            setVisibleSliders([...visibleSliders, title]);
+        }
+    };
+
+    const showAll = () => {
+        setVisibleSliders([...itemTitles]);
+    };
+
     return (
         <section className={styles.gallery}>
             <Title btntext={btnText} title={title} text={text} />
-            <div>
+
+            <div className={styles.galleryContainer}>
                 <div className={styles.btnsContainer}>
-                    <button key="all">All</button>
+                    <button className={styles.galleryBtn} onClick={showAll}>
+                        All
+                    </button>
                     {itemTitles.map((title, titleIndex) => (
-                        <button key={titleIndex}>{title}</button>
+                        <button
+                            className={`${styles.galleryBtn} ${visibleSliders.includes(title) ? styles.active : ''}`}
+                            key={titleIndex}
+                            onClick={() => toggleSlider(title)}
+                        >
+                            {title}
+                        </button>
                     ))}
                 </div>
+
                 <div className={styles.galleryItemsContainer}>
-                    {array.map((item, itemIndex) => (
-                        <GalleryItem 
-                            key={itemIndex} 
-                            galleryArray={item} 
-                            galleryTitle={itemTitles[itemIndex]} 
-                            galleryText={itemTexts[itemIndex]} 
-                        />
-                    ))}
+                    {visibleSliders.map((visibleTitle) => {
+                        const itemIndex = itemTitles.indexOf(visibleTitle);
+                        if (itemIndex === -1) return null;
+
+                        return (
+                            <GalleryItem
+                                key={itemIndex}
+                                galleryArray={array[itemIndex]}
+                                galleryTitle={itemTitles[itemIndex]}
+                                galleryText={itemTexts[itemIndex]}
+                            />
+                        );
+                    })}
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Gallery
+export default Gallery; 

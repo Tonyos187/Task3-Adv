@@ -4,6 +4,7 @@ import GalleryItemCard from "../GalleryItemCard/GalleryItemCard";
 
 
 const GalleryItem = ({galleryTitle, galleryArray, galleryText}) => {
+
     return (
         <div className={styles.galleryItem}>
             <Slider className={styles.slider} array={galleryArray} CardComponent={GalleryItemCard} type="Gallery" galleryTitle={galleryTitle} />

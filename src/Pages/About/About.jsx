@@ -4,6 +4,7 @@ import MissionsAndVisions from '../../components/MissionsAndVisions/MissionsAndV
 import Testimonials from '../../components/Testimonials/Testimonials'
 import BenefitsCard from '../../components/BenefitsCard/BenefitsCard'
 import HistorySection from '../../components/HistorySection/HistorySection'
+import Team from '../../components/Team/Team'
 
 const About = () => {
     const AwardsCards = [
@@ -16,10 +17,48 @@ const About = () => {
 
     const historyArray = [
         { date: "2023", title: "Resilience and Future Horizons", text: "Adapting to new challenges, we remained committed to our mission of providing an exceptional early education. Looking ahead with optimism, we envision a future filled with boundless possibilities as we continue shaping the leaders and thinkers of tomorrow." },
-        { date: "2023", title: "Resilience and Future Horizons", text: "Adapting to new challenges, we remained committed to our mission of providing an exceptional early education. Looking ahead with optimism, we envision a future filled with boundless possibilities as we continue shaping the leaders and thinkers of tomorrow." },
-        { date: "2023", title: "Resilience and Future Horizons", text: "Adapting to new challenges, we remained committed to our mission of providing an exceptional early education. Looking ahead with optimism, we envision a future filled with boundless possibilities as we continue shaping the leaders and thinkers of tomorrow." },
-        { date: "2023", title: "Resilience and Future Horizons", text: "Adapting to new challenges, we remained committed to our mission of providing an exceptional early education. Looking ahead with optimism, we envision a future filled with boundless possibilities as we continue shaping the leaders and thinkers of tomorrow." },
-    ]
+        { date: "2017", title: "Innovation and Technology", text: "Innovation became the driving force behind our kindergarten's progress from 2016 to 2020. Embracing the latest educational technologies, we crafted engaging and interactive learning experiences for our students." },
+        { date: "2012", title: "Expansion and Recognition", text: "These years marked as a period of expansion and recognition for our school. As we extended our facilities and enhanced our curriculum, we received accolades for our commitment to quality education and innovative teaching methodologies." },
+        { date: "2005", title: "Inception and Growth", text: "Established in 2005, our kindergarten school began its journey with a vision to provide a nurturing space for young minds to explore, learn, and grow. Over the next five years, we witnessed significant growth." },
+    ];
+    const teamArray = [
+        {
+            img: "/assets/imgs/Team/1.png",
+            name: "Ms. Sarah Anderson",
+            qual: "Qualification:Bachelor's Degree in Early Childhood Education",
+            text: "Ms. Sarah is a passionate educator with over 10 years of experience in guiding young minds. Her warm and nurturing approach creates a welcoming classroom environment where children feel comfortable to explore and learn."
+        },
+        {
+            img: "/assets/imgs/Team/2.png",
+            name: "Ms. Sarah Anderson",
+            qual: "Qualification:Bachelor's Degree in Early Childhood Education",
+            text: "Ms. Sarah is a passionate educator with over 10 years of experience in guiding young minds. Her warm and nurturing approach creates a welcoming classroom environment where children feel comfortable to explore and learn."
+        },
+        {
+            img: "/assets/imgs/Team/3.png",
+            name: "Ms. Sarah Anderson",
+            qual: "Qualification:Bachelor's Degree in Early Childhood Education",
+            text: "Ms. Sarah is a passionate educator with over 10 years of experience in guiding young minds. Her warm and nurturing approach creates a welcoming classroom environment where children feel comfortable to explore and learn."
+        },
+        {
+            img: "/assets/imgs/Team/4.png",
+            name: "Ms. Sarah Anderson",
+            qual: "Qualification:Bachelor's Degree in Early Childhood Education",
+            text: "Ms. Sarah is a passionate educator with over 10 years of experience in guiding young minds. Her warm and nurturing approach creates a welcoming classroom environment where children feel comfortable to explore and learn."
+        },
+        {
+            img: "/assets/imgs/Team/5.png",
+            name: "Ms. Sarah Anderson",
+            qual: "Qualification:Bachelor's Degree in Early Childhood Education",
+            text: "Ms. Sarah is a passionate educator with over 10 years of experience in guiding young minds. Her warm and nurturing approach creates a welcoming classroom environment where children feel comfortable to explore and learn."
+        },
+        {
+            img: "/assets/imgs/Team/6.png",
+            name: "Ms. Sarah Anderson",
+            qual: "Qualification:Bachelor's Degree in Early Childhood Education",
+            text: "Ms. Sarah is a passionate educator with over 10 years of experience in guiding young minds. Her warm and nurturing approach creates a welcoming classroom environment where children feel comfortable to explore and learn."
+        },
+    ];
 
     return (
         <>
@@ -38,6 +77,7 @@ const About = () => {
                 type="Awards"
             />
             <HistorySection array={historyArray} />
+            <Team array={teamArray} />
         </>
     )
 }

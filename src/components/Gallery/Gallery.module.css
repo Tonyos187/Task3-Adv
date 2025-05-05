@@ -6,10 +6,46 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 135px;
+    gap: 100px;
 }
 
 .galleryItemsContainer,
 .btnsContainer {
     width: 100%;
+}
+
+.galleryContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.btnsContainer {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.galleryBtn {
+    border-radius: 8px;
+    border-width: 2px;
+    padding: 14px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    cursor: pointer;
+}
+
+.galleryItemsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.active {
+    background-color: var(--bg3-color);
 }

@@ -1,0 +1,35 @@
+.team {
+    width: 100%;
+    padding: 0 8.4375%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin: 200px 0;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+@media (max-width: 1440px) {
+    .team {
+        padding: 0px 5.5555%;
+        gap: 80px;
+        margin: 150px 0;
+    }
+    .cardContainer {
+        row-gap: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .team {
+        padding: 0px 4.1025%;
+        gap: 50px;
+        margin: 80px 0;
+    }
+}
